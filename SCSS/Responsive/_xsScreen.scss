@@ -1,0 +1,32 @@
+@media screen and(max-width:576px) {
+    #vehicles {
+        #vehicles-content {
+            .vehicles-nav {
+                ul li {
+                    display: inline-block;
+                    margin-bottom: $mg-2;
+                }
+                ul li a {
+                    padding: $pd-1 $pd-2;
+                    border: none;
+                }
+            }
+        }
+    }
+    #swiper-slider {
+        margin-top: $mg-5;
+    }
+    #intro {
+        .intro-container {
+            .intro-right {
+                background-image: url("../IMG/our-vehicles-intro-2.jpg");
+                .intro-right-content {
+                    width: 40%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+
+
+}

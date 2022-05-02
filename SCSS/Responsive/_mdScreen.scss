@@ -1,0 +1,159 @@
+@media screen and(max-width:992px) {
+    #navbar {
+        a {
+            padding: $pd-1 $pd-2;
+        }
+        a:first-child {
+            padding: $pd-1 $pd-2;
+        }
+        .navbar-collapse {
+            border-top: $border-2;
+        }
+        .discovers-menu {
+            &::before {
+                border-bottom-color: transparent;
+                @include arrow(10%, unset);
+                top: 4.5rem;
+            }
+        }
+    }
+    #search-area {
+        display: none;
+    }
+    #search-area-xs {
+        background-color: $color-blue-100;
+        padding: $pd-1 $pd-1;
+        &::before {
+            @include arrow(unset, 1%);
+            border-bottom-color: transparent;
+        }
+        i {
+            color: $color-white;
+            font-size: $font-size-1;
+            transform: translateY(0);
+        }
+        input {
+            width: 60%;
+            height: 3.5rem;
+            font-size: $font-size-1;
+            color: $color-white;
+            border: 2px solid $color-white;
+            border-radius: 5px;
+            padding-bottom: $pd-2 0;
+            padding-left: $pd-1;
+            background-color: transparent;
+            outline: none;
+            &::placeholder {
+                font-size: $font-size-1;
+                font-weight: $font-weight-300;
+                color: $color-white;
+            }
+        }
+    }
+    .btn-search {
+        @include button($color-white, transparent, $color-white, $pd-1, $pd-1, $color-white, $color-blue-100);
+        margin: 0;
+        border-radius: 5px;
+    }
+    #swiper-slider {
+        height: 600px;
+        .swiper-container {
+            height: 400px;
+            .swiper-wrapper {
+                height: 90%;
+            }
+        }
+    }
+    #intro {
+        .intro-container {
+            .intro-right {
+                background-image: url("../IMG/intro-2-xs.jpg");
+                .intro-right-content {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+    #search-field {
+        flex-wrap: wrap;
+        padding: 0;
+        div {
+            width: 100%;
+            border: none;
+            border-top: $border-3;
+            padding: 0 $pd-3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input,
+            i {
+                font-size: $font-size-2;
+            }
+            input::placehoder {
+                font-size: $font-size-2;
+            }
+            input {
+                width: 80%;
+            }
+            .btn-search {
+                border-color: $color-blue-100;
+                border-radius: 40px;
+                color: $color-blue-200;
+                &:hover {
+                    background-color: $color-blue-100;
+                    color: $color-white;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            margin-bottom: 0;
+            padding: $pd-3 0;
+        }
+    }
+    #footer {
+        .footer-touch {
+            .touch-right {
+                .btn-search {
+                    border-color: $color-blue-100;
+                    border-radius: 40px;
+                    color: $color-blue-200;
+                    &:hover {
+                        background-color: $color-blue-100;
+                        color: $color-white;
+                    }
+                }
+                text-align: left;
+                padding: $pd-2 $pd-3;
+                p{
+                    margin-bottom: $mg-2;
+                }
+            }
+        }
+    }
+    #copy-right {
+        .copy-right-left {
+            p {
+                font-size: $font-size-1 - 0.2;
+            }
+        }
+        .copy-right-right {
+            ul {
+                justify-content: center;
+                li:first-child {
+                    border-left: none;
+                    font-size: $font-size-1 - 0.2;
+                }
+            }
+        }
+        .footer-logo {
+            justify-content: center;
+            img{
+               max-width: 50%;
+               height: 40px;
+            }
+        }
+    }
+}

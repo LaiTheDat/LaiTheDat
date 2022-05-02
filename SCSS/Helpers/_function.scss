@@ -1,0 +1,69 @@
+@each $stt, $bg-color in (1, #3c4c5c) (2, #3c4c5c) (3, #14409a) (4, #c0bab5) (5, #5c5c5c) (6, #33569c) {
+    #img-#{$stt} {
+        background: linear-gradient(#bbbdc0, $color-gray, $color-gray);
+    }
+    .vehicle-product:hover#img-#{$stt} {
+        background: linear-gradient($bg-color, $color-gray, $color-gray);
+    }
+
+    .delay-#{$stt} {
+        animation-delay: 0.3s * $stt;
+        // animation-delay: 1s;
+    }
+}
+
+@each$stt,$img in (1,'banner-1') (2,'banner-2') (3,'banner-3') (4,'banner-4') {
+    #swiper-slider {
+        .slide-#{$stt} {
+            background: url("../IMG/#{$img}.jpg");
+            background-size: cover;
+            background-position: center;
+            @media screen and (max-width: 768px) {
+                background: url("../IMG/#{$img}-xs.jpg");
+                background-size: cover;
+            }
+            @media screen and (max-width: 576px) {
+                background: url("../IMG/#{$img}-xs.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@each$stt,$img in (1,'slider-1') (2,'slider-2') (3,'slider-3') (4,'slider-4')  (5,'slider-5') {
+    .carousel-inner {
+        .item-#{$stt} {
+            background: url("../IMG/#{$img}.jpg");
+            background-size: cover;
+            background-position: center;
+            @media screen and (max-width: 768px) {
+                background: url("../IMG/#{$img}-xs.jpg");
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@each$stt,$img in (1,'item-1') (2,'item-2') (3,'item-3') (4,'item-4')  (5,'item-5') {
+    .function.function-#{$stt} {
+        background: url("../IMG/#{$img}.jpg");
+        background-size: 120%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-color: $color-white;
+        @media screen and (min-width: 440px) and (max-width: 768px) {
+            background-size: 100%;
+        }
+    }
+}
+
+@each$stt,$img in (1,'discover-1') (2,'discover-2') (3,'discover-3') (4,'discover-4')  (5,'discover-5') {
+    .discover-item-#{$stt} {
+        background: url("../IMG/#{$img}.jpg");
+        background-size: 120%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-color: $color-white;
+    }
+}

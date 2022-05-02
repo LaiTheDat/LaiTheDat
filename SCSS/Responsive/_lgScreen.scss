@@ -1,0 +1,82 @@
+@media screen and(max-width:1200px) {
+    #search-area {
+        input {
+            width: 83%;
+        }
+    }
+    #our-vehicles{
+        #our-vehicles-slider {
+            .carousel-item {
+                .carousel-caption--config {
+                    width: 40%;
+                    position: absolute;
+                    top: 8%;
+                    left: 6%;
+                    font-size: $font-size-1;
+                    color: $color-white;
+                    > p {
+                        font-weight: $font-weight-bold;
+                        span {
+                            font-weight: $font-weight-normal;
+                        }
+                    }
+                    img {
+                        width: 60%;
+                        transform: translateX(-3.5%);
+                    }
+                    .caption-content {
+                        font-weight: $font-weight-300;
+                        margin-bottom: $mg-2;
+                    }
+                    .carousel-caption-detail {
+                        margin-bottom: $mg-2;
+                        .carousel-detail-content {
+                            h2 {
+                                font-weight: 300;
+                                font-size: $font-size-3;
+                            }
+                            p {
+                                font-size: $font-size-1 - .2;
+                                font-weight: $font-weight-bold;
+                            }
+                        }
+                    }
+                }
+                .carousel-caption-footer {
+                    width: 50%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    border-top: 2px solid #a8a7a7;
+                    a {
+                        font-size: $font-size-1;
+                        font-weight: $font-weight-bold;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+
+@media screen and(min-width:1650px) {
+    #our-vehicles {
+        #our-vehicles-slider {
+            .carousel-indicators-config {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and(min-width:993px) and(max-width:1250px){
+    #search-field {
+        div {
+            input {
+                width: 75%;
+            }
+        }
+    }
+}

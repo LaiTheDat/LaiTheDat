@@ -1,0 +1,86 @@
+#footer {
+    padding: $pd-6 $pd-8;
+    text-align: center;
+    background-color: $color-gray;
+    .footer-top {
+        border-bottom: $border-3;
+    }
+    h1 {
+        @include text($font-weight-bold, $mg-3);
+        color: $color-dark-blue-200;
+        font-size: $font-size-2;
+    }
+    .footer-detail {
+        ul li {
+            margin-bottom: $mg-2;
+            a {
+                font-size: $font-size-1;
+                color: $color-blue-200;
+            }
+        }
+    }
+    .footer-touch {
+        margin-top: $mg-3;
+        align-items: center;
+        justify-content: space-between;
+        .touch-left {
+            text-align: left;
+            h1 {
+                margin-bottom: $mg-2;
+            }
+            .touch-icon {
+                @include social-icon();
+                margin-top: $mg-1;
+                justify-content: flex-start;
+                i {
+                    margin-right: $mg-1;
+                }
+            }
+        }
+        .touch-right {
+            text-align: right;
+            p {
+                font-size: $font-size-1;
+                color: $color-dark-blue-200;
+                margin-bottom: $mg-3;
+            }
+        }
+    }
+}
+#copy-right {
+    font-weight: $font-weight-300;
+    background-color: $color-blue-100;
+    padding: $pd-2 $pd-8;
+    .copy-right-left {
+        p {
+            font-size: $font-size-1;
+            color: $color-gray;
+
+            a {
+                color: $color-gray;
+                text-decoration: underline;
+            }
+        }
+    }
+    .copy-right-right {
+        ul {
+            justify-content: flex-end;
+            li {
+                padding: 0 $pd-2;
+                font-size: $font-size-1;
+                border-left: $border-3;
+                border-color: $color-white;
+                a {
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+    .footer-logo {
+        margin-top: $mg-3;
+        img {
+            max-width: 50%;
+            height: 4rem;
+        }
+    }
+}
